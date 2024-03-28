@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BeeVoice</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__inner">
+                <div class="header__phone">
+                    Вступай в наши ряды по телефону 43-24-72
+                </div>
+                <button class="btn" type="button" data-modal="callModal">Позвонить</button>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html"><img src="images/logo.png" alt=""></a>
+                <nav class="nav">
+                    <a class="nav__link" href="#">Главная</a>
+                    <a class="nav__link" href="#" data-scroll="projects">Озвученные проекты</a>
+                    <a class="nav__link" href="#" data-scroll="services">Заказать озвучку</a>
+                    <a class="nav__link" href="#" data-scroll="voices">Наши голоса</a>
+                    <a class="nav__link" href="#" data-scroll="footer">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <img class="intro__title" src="images/title.png" alt="">
+                    <h1 class="intro__subtitle">Студия  по озвучке обделённых фильмов, мультфильмов и сериалов</h1>
+                    <button class="btn  btn--yellow  btn--lg" type="button" data-scroll="services">Заказать озвучку</button>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="section  section--projects" id="projects">
+            <div class="container">
+                <h2 class="section__title">Озвученные проекты</h2>
+
+                <div class="projects">
+                    <div class="projects__item">
+                        <a class="html5lightbox" href="video/part-1.mp4" data-group="mygroup" title="Boy meets world. Серия 1">
+                            <img src="images/projects/project-1.png" alt="">
+                        </a>
+
+                        <a class="html5lightbox" href="video/part-2.mp4" data-group="mygroup" title="Boy meets world. Серия 2" style="display: none;">
+                            <img src="images/projects/project-1.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="projects__item" data-modal="inDevelopingModal">
+                        <img src="images/projects/project-2.png" alt="">
+                    </div>
+
+                    <div class="projects__item" data-modal="inDevelopingModal">
+                        <img src="images/projects/project-3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="arrows">
+                    <button class="btn  btn--arrow-left" type="button">назад</button>
+                    <button class="btn  btn--arrow-right" type="button">вперед</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section  section--who-we-are">
+            <div class="container">
+                <h2 class="section__title">Кто мы такие</h2>
+                <div class="who-we-are">
+                    <p class="who-we-are__info">BeeVoice - объединение актёров озвучки, занимающееся дублированием сериалов, фильмов, мультфильмов, веб-проектов и прочего контента, который не получил достойной русской локализации.</p>
+
+                    <p class="who-we-are__info">В данный момент студия занимается озвучкой сериала «Boy meets world» (Мальчик познаёт мир), сиквел которого был дублирован на русский язык в 2014 году, однако оригинальный сериал сложно найти даже в субтитрах.</p>
+
+                    <p class="who-we-are__info">Если вы заинтересованы в просмотре этого или любого другого проекта в качественной озвучке, вступайте в нашу группу ВКонтакте и пишите свои пожелания в соответствующем обсуждении vk.com/beevoice</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribe__inner">
+                    <div class="subscribe__left">
+                        <div>Подписывайся на наш ютуб канал и раньше всех узнавай о новых роликах</div>
+                        https://www.youtube.com/@Bee-voice
+                    </div>
+
+                    <div class="subscribe__right">
+                        <a class="btn" href="https://www.youtube.com/@Bee-voice" target="_blank">Подписаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section  section--properties">
+            <div class="container">
+                <h2 class="section__title">Особенности нашей озвучки</h2>
+
+                <ul class="properties">
+                    <li class="properties__item">Скорость - оперативно выполняем заказ, не откладывая в долгий ящик</li>
+                    <li class="properties__item">Качество - учитываем пожелания клиента и стараемся сделать всё в лучшем виде</li>
+                    <li class="properties__item">Цена - расчитываем цену на озвучку с учётом срочности и трудовых затрат сотрудников, минимизируем наценку</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section  section--services" id="services">
+            <div class="container">
+                <h2 class="section__title  section__title--services">Услуги, которые мы предоставляем</h2>
+
+                <div class="services">
+                    <div class="services__item">
+                        <img class="services__polygon" src="images/polygon-2.png" alt="">
+                        <img class="services__logo" src="images/services/service-1.png" alt="">
+                        <div class="services__item-footer">
+                            <h3 class="services__title">Озвучка полнометражного фильма</h3>
+                            <div class="services__price">20 000 р.</div>
+                            <a class="btn  btn--yellow  btn--sm" href="service-1.html">Заказать</a>
+                        </div>
+                    </div>
+
+                    <div class="services__item">
+                        <img class="services__polygon" src="images/polygon-2.png" alt="">
+                        <img class="services__logo" src="images/services/service-2.png" alt="">
+                        <div class="services__item-footer">
+                            <h3 class="services__title">Озвучка 20-ти минутной серии сериала</h3>
+                            <div class="services__price">3 000 р.</div>
+                            <a class="btn  btn--yellow  btn--sm" href="service-2.html">Заказать</a>
+                        </div>
+                    </div>
+
+                    <div class="services__item">
+                        <img class="services__polygon" src="images/polygon-2.png" alt="">
+                        <img class="services__logo  services__logo--mb" src="images/services/service-3.png" alt="">
+                        <div class="services__item-footer">
+                            <h3 class="services__title">Озвучка 40-ка минутной серии сериала</h3>
+                            <div class="services__price">6 000 р.</div>
+                            <a class="btn  btn--yellow  btn--sm" href="service-3.html">Заказать</a>
+                        </div>
+                    </div>
+
+                    <div class="services__item">
+                        <img class="services__polygon" src="images/polygon-2.png" alt="">
+                        <img class="services__logo" src="images/services/service-4.png" alt="">
+                        <div class="services__item-footer">
+                            <h3 class="services__title">Озвучка другого формата</h3>
+                            <div class="services__price">договорная оплата</div>
+                            <a class="btn  btn--yellow  btn--sm" href="service-4.html">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section  section--voices" id="voices">
+            <div class="container">
+                <h2 class="section__title  section__title--voices">Наши голоса</h2>
+
+                <div class="voices">
+                    <div data-slider>
+                        <div>
+                            <div class="voices__item">
+                                <div class="voices__content">
+                                    <img class="voices__photo" src="images/voices/voice-1.png" alt="">
+                                    <div class="voices__info">
+                                        Основатель проекта</br>
+                                        Голос детских персонажей</br>
+                                        Опыт в озвучке более трёх лет</br>
+                                        Участник таких проектов как</br>
+                                        ArtisComix, FandomVoices
+                                    </div>
+                                </div>
+                                <div class="voices__name">Suffy</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="voices__item">
+                                <div class="voices__content">
+                                    <img class="voices__photo" src="images/voices/voice-2.png" alt="">
+                                    <div class="voices__info">
+                                        Соучредитель проекта</br>
+                                        Голос подростков</br>
+                                        Опыт в озвучке более двух лет</br>
+                                        Участник таких проектов как</br>
+                                        SolarStudio, MuniCul
+                                    </div>
+                                </div>
+                                <div class="voices__name">Keyusy</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="voices__item">
+                                <div class="voices__content">
+                                    <img class="voices__photo" src="images/voices/voice-3.png" alt="">
+                                    <div class="voices__info">
+                                        Мужской голос</br>
+                                        Опыт в озвучке более четырёх лет</br>
+                                        Участних таких проектов как</br>
+                                        FandomVoices
+                                    </div>
+                                </div>
+                                <div class="voices__name">Trimo</div>
+                            </div>
+                        </div>
+                       <div class="voices__item">
+                                <div class="voices__content">
+                                    <img class="voices__photo" src="images/voices/voice-4.png" alt="">
+                                    <div class="voices__info">
+                                        Голос взрослых женщин</br>
+                                        Опыт в озвучке более года</br>
+                                        Участних таких проектов как </br>
+                                        Rolling Fox
+                                    </div>
+                                </div>
+                                <div class="voices__name">Metz</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                        <img class="footer__contacts-logo" src="images/contact-logo-1.png" alt="">
+                        <div class="footer__contacts-data">
+                            <a class="footer__contacts-anchor" href="tel:+79007543324">+7 (900) 754 33 24</a>
+                            <a class="footer__contacts-anchor" href="tel:432472">43-24-72</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__contacts-item">
+                        <img class="footer__contacts-logo" src="images/contact-logo-2.png" alt="">
+                        <a class="footer__contacts-anchor" href="https://beevoice.ru" target="_blank">beevoice.ru</a>
+                    </div>
+
+                    <div class="footer__contacts-item">
+                        <img class="footer__contacts-logo" src="images/contact-logo-3.png" alt="">
+                        <div class="footer__contacts-data">
+                            <a class="footer__contacts-anchor" href="mailto:beevoice.contact@gmail.com">beevoice.contact@gmail.com</a>
+                            <a class="footer__contacts-anchor" href="https://vk.com/beevoice" target="_blank">vk.com/beevoice</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__info  footer__info--mb">Студия озвучки BeeVoice занимается дублированием проектов, которые долгое время не получали качественной русской локализации. Мы знакомим соотечественников с незаслуженно обделёнными проектами.</div>
+
+                <div class="footer__info">Также студия принимает заказы на индивидуальную озвучку</div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="callModal">
+        <div class="modal__inner">
+            <div class="modal__content">
+                <button class="btn" type="button" data-copy-number>Скопировать номер</button>
+                <button class="modal__close" type="button">
+                    <img src="images/close.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="inDevelopingModal">
+        <div class="modal__inner">
+            <div class="modal__content">
+                <div class="modal__info">Проект в разработке</div>
+                <button class="modal__close" type="button">
+                    <img src="images/close.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="buttonup"><img src=images/up.png></a>
+    <a class="button-support" href="support.html">Поддержка</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/html5lightbox.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
