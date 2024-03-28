@@ -1,0 +1,740 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/Bahnschrift.ttf");
+}
+@font-face {
+  font-family: "VeraCrouz";
+  src: url("../fonts/VeraCrouz.ttf");
+}
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/SegoeUI.ttf");
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  padding: 10px 40px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 21px;
+  color: #f6d645;
+  line-height: 18px;
+  background-color: #000;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn--arrow-left {
+  background: url("../images/arrow-left.png") left no-repeat;
+}
+.btn--arrow-right {
+  background: url("../images/arrow-right.png") right no-repeat;
+}
+.btn--lg {
+  line-height: 30px;
+}
+.btn--sm {
+  padding-left: 18px;
+  padding-right: 18px;
+  align-self: flex-end;
+  font-size: 16px;
+}
+.btn--yellow {
+  background-color: #fff343;
+  color: #000;
+}
+.btn--dark-yellow {
+  background-color: #f6d645;
+  color: #000;
+}
+.btn:focus {
+  outline: 0;
+}
+
+.section--projects {
+  padding-top: 115px;
+}
+.section--who-we-are {
+  padding: 115px 0 95px;
+}
+.section--properties {
+  padding: 125px 0 145px;
+}
+.section--services {
+  padding: 75px 0 105px;
+  background-color: #f6d645;
+}
+.section--voices {
+  padding: 110px 0 215px;
+}
+
+.section__title {
+  margin-bottom: 45px;
+  font-family: "VeraCrouz";
+  font-weight: 400;
+  font-size: 60px;
+  color: #fff343;
+  line-height: 18px;
+}
+.section__title--services {
+  margin-bottom: 55px;
+  color: #000;
+}
+.section__title--voices {
+  margin-bottom: 60px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top {
+  padding: 15px 0;
+  background-color: #f6d645;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header__phone {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 21px;
+  color: #000;
+  line-height: 18px;
+}
+.header__phone a {
+  color: inherit;
+  text-decoration: none;
+}
+.header__phone a:hover {
+  text-decoration: underline;
+}
+
+.header__bottom {
+  padding: 10px 0;
+}
+
+.nav__link {
+  margin-left: 40px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 21px;
+  color: #f6d645;
+  line-height: 38.45px;
+  text-decoration: none;
+}
+.nav__link:first-child {
+  margin-left: 0;
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 755px;
+  background: url("../images/intro.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 710px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__title {
+  margin-bottom: 35px;
+}
+
+.intro__subtitle {
+  margin-bottom: 45px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff343;
+  line-height: 40px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.projects__item {
+  width: 30%;
+  box-shadow: 7px 7px 7px #da9846;
+  cursor: pointer;
+}
+.projects__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.who-we-are {
+  padding-right: 35px;
+}
+
+.who-we-are__info {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 23px;
+  color: #fff343;
+  line-height: 22px;
+}
+.who-we-are__info a {
+  color: inherit;
+  text-decoration: none;
+}
+.who-we-are__info a:hover {
+  text-decoration: underline;
+}
+
+.subscribe {
+  padding: 45px 0 40px;
+  background-color: #f6d645;
+}
+
+.subscribe__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__left {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+}
+.subscribe__left a {
+  color: inherit;
+  text-decoration: none;
+}
+.subscribe__left a:hover {
+  text-decoration: underline;
+}
+
+.properties {
+  padding-left: 20px;
+  font-family: "SegoeUI";
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff343;
+  line-height: 30px;
+  list-style-image: url("../images/polygon-1.png");
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 23%;
+  height: 370px;
+  position: relative;
+  background-color: #ef993d;
+}
+
+.services__polygon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.services__logo {
+  margin: 0 auto 55px;
+  position: relative;
+  z-index: 2;
+}
+.services__logo--mb {
+  margin-bottom: 90px;
+}
+
+.services__item-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.services__title {
+  margin-bottom: 10px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  line-height: 18px;
+}
+
+.services__price {
+  margin-bottom: 5px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  line-height: 18px;
+}
+
+.voices {
+  position: relative;
+}
+
+.voices__item {
+  min-height: 165px;
+}
+
+.voices__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.voices__photo {
+  margin-right: 15px;
+}
+
+.voices__info {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff343;
+  line-height: 20px;
+}
+
+.voices__name {
+  font-family: "VeraCrouz";
+  font-weight: 400;
+  font-size: 55px;
+  color: #fff343;
+  line-height: 38.92px;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #f6d645;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.footer__contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contacts-logo {
+  margin-right: 20px;
+}
+
+.footer__contacts-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contacts-anchor {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+  text-decoration: none;
+}
+.footer__contacts-anchor:hover {
+  text-decoration: underline;
+}
+
+.footer__info {
+  padding: 0 5px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+  text-align: center;
+}
+.footer__info--mb {
+  margin-bottom: 40px;
+}
+
+.slick-arrow {
+  padding: 10px 40px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 21px;
+  color: #f6d645;
+  line-height: 18px;
+  background-color: #000;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  bottom: -70px;
+  z-index: 1;
+}
+.slick-arrow:focus {
+  outline: 0;
+}
+
+.slick-prev {
+  left: 0;
+  background: url("../images/arrow-left.png") left no-repeat;
+}
+
+.slick-next {
+  right: 0;
+  background: url("../images/arrow-right.png") right no-repeat;
+}
+
+#html5lightbox-watermark {
+  visibility: hidden;
+}
+
+.modal {
+  display: none;
+  padding: 30px 15px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.modal.show {
+  display: block;
+}
+
+.modal__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.modal__content {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.modal__close {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -20px;
+  right: -30px;
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+.modal__close img {
+  display: block;
+}
+.modal__close:focus {
+  outline: 0;
+}
+
+.modal__info {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+}
+
+.request-form {
+  padding: 110px 0;
+  background: url("../images/intro.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.not-found-form {
+  padding: 110px 0;
+  background-size: cover;
+}
+
+.request-form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.request-form__top {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.request-form__title {
+  margin-bottom: 10px;
+}
+
+.request-form__title,
+.request-form__subtitle {
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 25px;
+  color: #f6d645;
+  line-height: 30px;
+}
+
+.form__group {
+  margin-bottom: 25px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 21px;
+  color: #f6d645;
+  line-height: 38.45px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  transition: border-bottom-color 0.2s linear;
+}
+.input:focus {
+  outline: 0;
+  border-bottom: 1px solid #f6d645;
+}
+.input::placeholder {
+  color: #f6d645;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.buttonup {
+width:88px; 
+height: 130px;
+position:fixed;
+bottom:20px;
+right:50px;
+}
+
+.button-support {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Bahnschrift";
+  font-weight: 400;
+  font-size: 21px;
+  color: #f6d645;
+  line-height: 18px;
+  background-color: #000;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+   background-color: #fff343;
+  color: #000;
+  line-height: 30px;
+  
+  width:150px; 
+  height:40px;
+  position:fixed;
+  bottom:20px;
+  right:50px;
+}
+
