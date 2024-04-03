@@ -1,3 +1,1 @@
 ErrorDocument 404 /https://beevoice.github.io/BeeVoice/404.html
-ErrorDocument 404 jstcache="0" /https://beevoice.github.io/BeeVoice/404.html
-        
